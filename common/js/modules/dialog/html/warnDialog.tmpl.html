@@ -1,0 +1,9 @@
+<div class="modal-header warning">
+    <a class="right"><i class="fa fa-times fg-green" ng-click="warnModalVm.close()"></i></a>
+    <h4 class="modal-title"><span ng-bind="warnModalVm.header"></span></h4>
+</div>
+<div class="modal-body" ng-bind-html="warnModalVm.msg">
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-primary" ng-click="warnModalVm.close()">Got It!</button>
+</div>

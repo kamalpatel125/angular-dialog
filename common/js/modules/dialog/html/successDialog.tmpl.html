@@ -1,0 +1,10 @@
+<div class="modal-header success">
+    <a class="right"><i class="fa fa-times fg-green" ng-click="successModalVm.close()"></i></a>
+    <h4 class="modal-title"><span ng-bind="successModalVm.header"></span></h4>
+</div>
+<div class="modal-body" ng-bind-html="successModalVm.msg">
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-primary" ng-click="successModalVm.close()">Ok</button>
+</div>
+

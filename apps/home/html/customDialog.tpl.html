@@ -1,0 +1,26 @@
+<div class="modal-header confirm">
+    <a class="right"><i class="fa fa-times fg-green" ng-click="customDialogVm.close()"></i></a>
+    <h4 class="modal-title">
+        <span ng-bind="customDialogVm.data.title"></span>
+    </h4>
+</div>
+<div class="modal-body">
+    <div class="row">
+        <div class="col-lg-5">
+            <div class="form-">
+                <label>First name</label>
+                <input ng-model="customDialogVm.model.firstName" type="text" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Last name</label>
+                <input ng-model="customDialogVm.model.lastName" type="text" class="form-control"  />
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-primary margin-right-sm" ng-click="customDialogVm.submitForm()">Submit</button>
+    <button type="button" class="btn btn-primary" ng-click="customDialogVm.close()">Cancel</button>
+</div>
+

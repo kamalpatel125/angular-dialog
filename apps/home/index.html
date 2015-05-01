@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bwApp" strict-di="true">
+<head>
+    <!-- Navigation -->
+    <ng-include src="'../../common/html/templates/head_meta.tpl.html'"></ng-include>
+    <title>Angular Example by Kamal Patel</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../common/css/core.css" rel="stylesheet">
+    <link href="../../common/css/animate.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Navigation -->
+    <ng-include src="'../../common/html/templates/app_nav.tpl.html'"></ng-include>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div ng-view=""></div>
+        <!-- Footer -->
+        <ng-include src="'../../common/html/templates/app_footer.tpl.html'"></ng-include>
+    </div>
+
+    <!-- Core JavaScript -->
+    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="../../bower_components/angular-route/angular-route.js"></script>
+    <script src="../../bower_components/angular-sanitize/angular-sanitize.js"></script>
+
+    <!-- Common JavaScript -->
+    <script src="../../common/js/modules/config/globalSettings.js"></script>
+
+    <!-- Order Management module JavaScript -->
+    <script src="../../common/js/modules/dialog/module.dialog.js"></script>
+    <script src="../../common/js/modules/dialog/controllers/dialogCtrl.js"></script>
+    <script src="../../common/js/modules/dialog/services/dialogService.js"></script>
+
+    <!-- Application JavaScript -->
+    <script src="js/module.app.home.js"></script>
+    <script src="js/module.app.home.routes.js"></script>
+    <script src="js/controllers/dialogExamplesCtrl.js"></script>
+    <script src="js/controllers/customDialogCtrl.js"></script>
+</body>
+
+</html>

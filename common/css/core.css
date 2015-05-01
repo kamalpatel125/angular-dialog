@@ -1,0 +1,124 @@
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.hero-spacer {
+    margin-top: 10px;
+}
+
+.hero-feature {
+    margin-bottom: 30px;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.clearBoth{
+    clear:both;
+}
+
+.margin-top-md{
+    margin-top:20px;
+}
+
+.modal-open {
+    overflow: hidden;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+.modal.fade .modal-dialog {
+    animation: 0.8s zoomIn ease;
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.modal-dialog {
+    margin: 20rem auto;
+    width: 600px;
+}
+.modal-content {
+    position: relative;
+    background-color: white;
+    border: 1px solid #999;
+    border-radius: 0;
+    outline: 0;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.modal-backdrop {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 115%;
+    width: 100%;
+    background: #000;
+    display: none;
+    will-change: opacity;
+}
+.modal-header {
+    min-height: 16px;
+    padding: 10px;
+}
+.modal-header .close {
+    margin-top: -2px;
+}
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+}
+.modal-body {
+    position: relative;
+    padding: 1rem;
+    min-height: 100px;
+    height: auto;
+}
+.modal-footer {
+    padding: 1rem;
+    text-align: right;
+}
+
+.success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+
+.warning {
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    color: #8a6d3b;
+}
+
+.error {
+    background-color: #d2322d;
+    border-color: #d2322d;
+    color: #ffffff;
+}
+
+.confirm {
+    background-color: #333333;
+    border-color: #333333;
+    color: #ffffff;
+}
+

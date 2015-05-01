@@ -1,0 +1,67 @@
+<header class="jumbotron">
+    <h2>Welcome to Simple Angular Dialog/Modal Examples !</h2>
+    <p>Simple dialog service to show different types of promise based dialogs including custom dialog.</p>
+</header>
+<hr>
+<div class="row text-center">
+    <div class="col-md-3 col-sm-6">
+        <div class="thumbnail">
+            <div class="caption">
+                <h3>Success Dialog</h3>
+                <p>
+                    <a class="btn btn-primary success" data-ng-click="vm.openDilog('success')">Success</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="thumbnail">
+            <div class="caption">
+                <h3>Warn Dialog</h3>
+                <p>
+                    <a class="btn btn-primary warning" data-ng-click="vm.openDilog('warn')">Warn</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="thumbnail">
+            <div class="caption">
+                <h3>Error Dialog</h3>
+                <p>
+                    <a class="btn btn-primary error" data-ng-click="vm.openDilog('error')">Error</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="thumbnail">
+            <div class="caption">
+                <h3>Confirm Dialog</h3>
+                <p>
+                    <a class="btn btn-primary confirm" data-ng-click="vm.openDilog('confirm')">Confirm</a>
+                </p>
+                <pre ng-show="vm.confirmed">{{vm.confirmed}}</pre>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row text-center">
+    <div class="col-md-6 col-md-offset-3 col-sm-12">
+        <div class="thumbnail">
+            <div class="caption">
+                <h3>Custom Dialog</h3>
+                <p>
+                    <a class="btn btn-primary" data-ng-click="vm.openDilog('custom')">Custom</a>
+                </p>
+                <br clear="all" />
+                <p class="text-left">
+                    <spn ng-show="vm.submittedFormData">
+                         Submitted form data :
+                        {{vm.submittedFormData | json }}
+                    </spn>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

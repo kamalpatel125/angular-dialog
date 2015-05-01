@@ -1,0 +1,12 @@
+<div class="modal-header confirm">
+    <a class="right"><i class="fa fa-times fg-green" ng-click="confirmModalVm.close()"></i></a>
+    <h4 class="modal-title">
+        <span ng-bind="confirmModalVm.header"></span>
+    </h4>
+</div>
+<div class="modal-body" ng-bind-html="confirmModalVm.msg"></div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-primary margin-right-sm" ng-click="confirmModalVm.yes()">OK</button>
+    <button type="button" class="btn btn-primary" ng-click="confirmModalVm.close()" ng-if="!confirmModalVm.hideCancelBtn">Cancel</button>
+</div>
+
