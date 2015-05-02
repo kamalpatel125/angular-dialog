@@ -39,7 +39,10 @@ footer {
     outline: 0;
 }
 .modal.fade .modal-dialog {
-    animation: 0.8s zoomIn ease;
+    -webkit-animation: 0.8s dialogAnimation ease;
+    -moz-animation: 0.8s dialogAnimation ease;
+    -o-animation: 0.8s dialogAnimation ease;
+    animation: 0.8s dialogAnimation ease;
 }
 
 .modal-open .modal {
@@ -122,3 +125,31 @@ footer {
     color: #ffffff;
 }
 
+@-webkit-keyframes dialogAnimation {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes dialogAnimation {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.dialogAnimation {
+    -webkit-animation-name: dialogAnimation;
+    animation-name: dialogAnimation;
+}
